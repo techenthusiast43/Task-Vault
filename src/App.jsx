@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useAccount, useChainId, useSwitchChain, useBalance, useDisconnect } from 'wagmi';
 import { useAppKit } from '@reown/appkit/react';
-import { formatEther, parseEther } from 'viem';
 import {
   ShieldCheck,
   PlusCircle,
@@ -14,13 +13,11 @@ import {
   Scale,
   RefreshCw,
   Wallet,
-  ArrowRight,
   UserCheck,
   X,
   Copy,
   Check
 } from 'lucide-react';
-import { TASK_VAULT_ABI } from './contracts/TaskVaultABI.js';
 import { TASK_VAULT_ADDRESS } from './contracts/deployedAddress.js';
 import { bohrTestnet } from './config/wagmi.js';
 
